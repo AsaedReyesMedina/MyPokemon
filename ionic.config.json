@@ -1,0 +1,7 @@
+{
+  "name": "MyPokemon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
