@@ -2,6 +2,7 @@ import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
   IonIcon,
+  IonImg,
   IonLabel,
   IonRouterOutlet,
   IonTabBar,
@@ -10,10 +11,7 @@ import {
   setupIonicReact,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { ellipse, square, triangle } from "ionicons/icons";
-import Tab1 from "./pages/Tab1";
-import Tab2 from "./pages/Tab2";
-import Tab3 from "./pages/Tab3";
+import { search } from "ionicons/icons";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -33,6 +31,9 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import Tab1 from "./pages/Pokedex/Tab1";
+import Tab2 from "./pages/Buscar/Tab2";
+import Tab3 from "./pages/Favoritos/Tab3";
 
 setupIonicReact();
 
@@ -56,15 +57,21 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={triangle} />
+            <IonImg
+              src="https://img.icons8.com/color/30/null/pokedex.png"
+              alt="pokedex"
+            ></IonImg>
             <IonLabel>Pokedex</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={search} />
             <IonLabel>Buscar</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
+            <IonImg
+              src="https://img.icons8.com/color/30/null/pokeball-2.png"
+              alt="pokeball"
+            ></IonImg>
             <IonLabel>Favoritos</IonLabel>
           </IonTabButton>
         </IonTabBar>
