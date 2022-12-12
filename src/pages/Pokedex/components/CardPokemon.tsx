@@ -1,18 +1,24 @@
-import React from "react";
-import { IonCard, IonImg, IonText } from "@ionic/react";
+import { IonCard, IonImg } from "@ionic/react";
+import { useState } from "react";
 import useFetch from "../../../hooks/useFetch";
 import "../Tab1.css";
-const CardPokemon = ({ name, url }: any) => {
+import PokemonInfo from "./PokemonInfo";
+const CardPokemon = ({ url, name }: any) => {
+  const [isOpen, setIsOpen] = useState(false);
   const { data }: any = useFetch(`${url}`);
-  data ? console.log(data) : console.log(null);
   return (
     <>
       {data ? (
         <>
-          <IonCard>
+          <IonCard onClick={() => setIsOpen(true)}>
             <IonImg src={data.sprites.front_default}></IonImg>
-            <IonText>{name}</IonText>
           </IonCard>
+          <PokemonInfo
+            name={name}
+            data={data}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
         </>
       ) : null}
     </>

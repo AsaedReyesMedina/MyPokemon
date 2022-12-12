@@ -1,8 +1,39 @@
+ion-grid {
+  --ion-grid-padding: 2px;
+
+  --ion-grid-padding-xs: 2px;
+  --ion-grid-padding-sm: 2px;
+  --ion-grid-padding-md: 2px;
+  --ion-grid-padding-lg: 2px;
+  --ion-grid-padding-xl: 2px;
+
+  --ion-grid-column-padding: 2px;
+
+  --ion-grid-column-padding-xs: 2px;
+  --ion-grid-column-padding-sm: 2px;
+  --ion-grid-column-padding-md: 2px;
+  --ion-grid-column-padding-lg: 2px;
+  --ion-grid-column-padding-xl: 2px;
+}
 ion-text {
   font-size: 12px;
 }
-ion-card{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+ion-card {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.toolbarSearch {
+  align-content: center;
+}
+.searchbarPokedex {
+  padding-right: 24px;
+}
+.iconFilter {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+.cardFilterPokemon {
+  margin-top: 24px;
 }
