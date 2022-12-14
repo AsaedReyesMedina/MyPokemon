@@ -37,3 +37,10 @@ ion-card {
 .cardFilterPokemon {
   margin-top: 24px;
 }
+.namePokemonCard {
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 30px;
+}

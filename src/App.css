@@ -1,1 +1,7 @@
-
+@font-face {
+  font-family: "Pixel-art";
+  src: url("./assets/fonts/pixelart.ttf");
+}
+* {
+  font-family: "Pixel-art";
+}

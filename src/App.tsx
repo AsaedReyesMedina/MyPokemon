@@ -34,7 +34,7 @@ import "./theme/variables.css";
 import Tab1 from "./pages/Pokedex/Tab1";
 import Tab2 from "./pages/Buscar/Tab2";
 import Tab3 from "./pages/Favoritos/Tab3";
-
+import "./App.css";
 setupIonicReact();
 
 const App: React.FC = () => (
